@@ -1,0 +1,45 @@
+<!doctype html>
+<div class="field">
+<label for="grade">Grade</label>
+<input id="grade" name="grade" type="text" placeholder="e.g. 10-A" required />
+</div>
+</div>
+
+
+<div class="actions">
+<button type="submit" class="btn primary">Save Student</button>
+<button type="button" id="reset-btn" class="btn">Reset</button>
+</div>
+</form>
+</section>
+
+
+<section class="list-section">
+<div class="list-header">
+<h2>Students</h2>
+<div class="controls">
+<input id="search" type="search" placeholder="Search by name or grade" />
+<select id="sort">
+<option value="added-desc">Newest</option>
+<option value="added-asc">Oldest</option>
+<option value="name-asc">Name A–Z</option>
+<option value="name-desc">Name Z–A</option>
+</select>
+</div>
+</div>
+
+
+<div id="students-table" class="table-wrap">
+<!-- rendered by View -->
+</div>
+</section>
+</main>
+
+
+<footer class="app-footer">Made with ❤️ — Save data locally using LocalStorage</footer>
+</div>
+
+
+<script src="app.js"></script>
+</body>
+</html>
